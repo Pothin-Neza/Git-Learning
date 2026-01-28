@@ -362,3 +362,52 @@ OTF:GitLearning pothin_otf$
 
 # Bundle 2
 
+OTF:GitLearning pothin_otf$ git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+OTF:GitLearning pothin_otf$ git branch
+dev
+* ft/bundle-2
+  main
+  OTF:GitLearning pothin_otf$ git status
+  On branch ft/bundle-2
+  Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+  deleted:    src/Main.java
+  new file:   src/services.html
+
+Changes not staged for commit:
+(use "git add <file>..." to update what will be committed)
+(use "git restore <file>..." to discard changes in working directory)
+modified:   README.md
+modified:   src/services.html
+
+OTF:GitLearning pothin_otf$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+add
+OTF:GitLearning pothin_otf$ git add .
+OTF:GitLearning pothin_otf$ git commit -m "services page"
+[ft/bundle-2 400ea4e] services page
+3 files changed, 374 insertions(+), 16 deletions(-)
+delete mode 100644 src/Main.java
+create mode 100644 src/services.html
+OTF:GitLearning pothin_otf$ git push origin main
+Everything up-to-date
+OTF:GitLearning pothin_otf$ git push origin ft/bundle-2
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 3.67 KiB | 1.83 MiB/s, done.
+Total 10 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/Pothin-Neza/Git-Learning/pull/new/ft/bundle-2
+remote:
+To github.com:Pothin-Neza/Git-Learning.git
+* [new branch]      ft/bundle-2 -> ft/bundle-2
+
+# bundle 3
+
